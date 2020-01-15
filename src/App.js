@@ -20,11 +20,7 @@ class App extends Component {
         </header>
         <div className='App-list'>
           {store.lists.map(list => (
-            <List
-              key={list.id}
-              header={list.header}
-              cards={list.cardIds.map(id => store.allCards[id])}
-            />
+            <List key={list.id} header={list.header} cards={list.cardIds.map(id => store.allCards[id])} />
           ))}
         </div>
       </main>
